@@ -22,8 +22,8 @@ public class PessoaController {
   @Autowired
   private PessoaService service;
 
-  @GetMapping
-  public List<Pessoa> listar(@PathVariable Long id) {
+  @GetMapping("/todos")
+  public List<Pessoa> listar() {
     return this.service.listar();
   }
 
@@ -39,10 +39,10 @@ public class PessoaController {
 
   @PutMapping("/{id}")
   public JsonResposta editar(@PathVariable Long id, @RequestBody Pessoa pessoa) {
-    return this.service.editar(pessoa);
+    return this.service.editar(id, pessoa);
   }
 
-  @DeleteMapping("/{îd}")
+  @DeleteMapping("/{id}")
   public JsonResposta excluir(@PathVariable Long id) {
     return this.service.excluir(id);
   }
