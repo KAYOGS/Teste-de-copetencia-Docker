@@ -1,0 +1,6 @@
+com\example\demo\model\JsonResposta$JsonRespostaBuilder.class
+com\example\demo\EntregaFinalApplication.class
+com\example\demo\model\JsonResposta.class
+com\example\demo\model\Pessoa.class
+com\example\demo\service\PessoaService.class
+com\example\demo\controller\PessoaController.class
